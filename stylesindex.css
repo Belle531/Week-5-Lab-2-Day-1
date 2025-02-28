@@ -93,30 +93,23 @@ footer {
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
-    background-color: #C095E4;
+    background-color: white;
     padding: 10px 0;
 }
 
 .banner span {
     display: inline-block;
     padding-left: 100%;
-    animation: marquee 75s linear infinite, colorChange 5s infinite;
+    animation: marquee 20s linear infinite, colorChange 5s infinite;
     font-size: 16px;
     font-weight: bold;
-    background: linear-gradient(90deg, #ff595e, #ffca3a,#1982c4, #8ac926, #1982c4); 
-    @-webkit-background-clip: text;
+    background: linear-gradient(90deg, #29abe2, #40e0d0, #32cd32, #29abe2); 
+    -webkit-background-clip: text;
     color: transparent;
 }
 
 @keyframes marquee {
-    0% { transform: translateX(0, 0); }
+    0% { transform: translateX(0); }
     100% { transform: translateX(-100%); }
 }
 
-@keyframes colorChange {
-    0% { color:  #ff595e,; }
-    25% { color: #1982c4,; }
-    50% { color: #ffca3a,; }
-    75% { color: #8ac926,; }
-    100% { color:#1982c4,; }
-}

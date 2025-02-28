@@ -30,20 +30,3 @@ function calculateResult() {
 }
 
 
-function toggleTheme() {
-    document.body.classList.toggle('dark-theme');
-}
-
-
-document.getElementById('themeToggle').addEventListener('click', toggleTheme);
-
-const clickButton = document.getElementById('clickButton');
-
-clickButton.addEventListener('click', () => {
-    playSound();
-    confetti({
-        particleCount: 200, 
-        spread: 70,        
-        origin: { y: clickButton.offsetTop, x: clickButton.offsetLeft + clickButton.offsetWidth/2 } 
-    });
-});
