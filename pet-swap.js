@@ -4,5 +4,4 @@ function dogsChanger(){
 }
 
 
-
 myPetButton.onclick = dogsChanger;
