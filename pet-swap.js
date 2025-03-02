@@ -1,4 +1,4 @@
-unction dogsChanger() {
+function dogsChanger() {
     const myPetHeader = document.getElementById("myPetheader"); 
     const myPetParagraph = document.getElementById("myPetParagraph"); 
 
